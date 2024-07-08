@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Desire</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="images/logo.png" alt="Team Desire Logo" class="logo-image">
+                <div class="logo">Team Desire</div>
+            </div>
+            <ul>
+                <li><a href="#home" class="nav-link" data-target="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-target="about">About Us</a></li>
+                <li><a href="#team" class="nav-link" data-target="team">Team</a></li>
+                <li><a href="#socials" class="nav-link" data-target="socials">Socials</a></li>
+                <li><a href="#contact" class="nav-link" data-target="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="section home">
+            <div class="hero-content">
+                <h1 class="hero-title">Welcome to Team Desire</h1>
+                <p class="hero-subtitle">The Number 1 Upcoming Team</p>
+            </div>
+        </section>
+
+        <section id="about" class="section about hidden">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <p>Team Desire is a premier esports organization dedicated to excellence and competition. Our players are some of the best in the industry, and we strive to achieve greatness in every match we play. Our mission is to foster a community of passionate gamers and to push the boundaries of esports. Founded in 2024, Team Desire has quickly risen to prominence in the esports world. Our commitment to hard work, teamwork, and sportsmanship sets us apart from the rest. We believe in the power of gaming to bring people together and create lasting memories.</p>
+                <p>Our team competes in a variety of games, mainly Fortnite, and we are always looking to expand our roster with talented and dedicated players. Whether you are a seasoned professional or an aspiring amateur, Team Desire offers a platform for growth and success. Beyond our competitive endeavors, we are committed to giving back to the community. Through our various initiatives and partnerships, we aim to support and uplift the gaming community at large. Join us on our journey to become the top esports team in the world.</p>
+            </div>
+        </section>
+
+        <section id="team" class="section team hidden">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <img src="images/member1.jpg" alt="Member 1">
+                    <h3>Hoggy</h3>
+                    <p>Role: CEO</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member2.jpg" alt="Member 2">
+                    <h3>Blitz</h3>
+                    <p>Role: Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member3.jpg" alt="Member 3">
+                    <h3>Blyp</h3>
+                    <p>Role: Founder</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member4.jpg" alt="Member 4">
+                    <h3>Jwinkle</h3>
+                    <p>Role: T1 Competitive</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member5.jpg" alt="Member 5">
+                    <h3>Vazzy</h3>
+                    <p>Role: T1 Competitive</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member6.jpg" alt="Member 6">
+                    <h3>Tonqa</h3>
+                    <p>Role: T2 Competitive</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member7.jpg" alt="Member 7">
+                    <h3>AnTtez</h3>
+                    <p>Role: T2 Competitive</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member8.jpg" alt="Member 8">
+                    <h3>Tryx</h3>
+                    <p>Role: Competitive Academy</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member9.jpg" alt="Member 9">
+                    <h3>Yuno</h3>
+                    <p>Role: Moderator</p>
+                </div>
+                <div class="team-member">
+                    <img src="images/member10.jpg" alt="Member 10">
+                    <h3>Skii</h>
+                    <p>Role: Studio/VFX</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="socials" class="section socials hidden">
+            <h2>Follow Us</h2>
+            <div class="social-links">
+                <div class="social-item">
+                    <img src="images/tiktok.png" alt="TikTok">
+                    <a href="https://tiktok.com" target="_blank" class="social-button">Follow on TikTok</a>
+                </div>
+                <div class="social-item">
+                    <img src="images/youtube.png" alt="YouTube">
+                    <a href="https://youtube.com" target="_blank" class="social-button">Subscribe on YouTube</a>
+                </div>
+                <div class="social-item">
+                    <img src="images/twitter.png" alt="Twitter">
+                    <a href="https://twitter.com" target="_blank" class="social-button">Follow on Twitter</a>
+                </div>
+                <div class="social-item">
+                    <img src="images/discord.png" alt="Discord">
+                    <a href="https://discord.com" target="_blank" class="social-button">Join on Discord</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact hidden">
+            <h2>Contact Us</h2>
+            <form id="contact-form" action="send_mail.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Team Desire. All rights reserved.</p>
+    </footer>
+</body>
+</html>
